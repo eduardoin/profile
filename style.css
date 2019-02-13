@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  color: #444;
+  background-color: #f2f2f2;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #005792;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin: 0;
+}
+h1 {
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+  margin: 30px 0 16px;
+}
+a {
+  color: #448ef6;
+  text-decoration: none;
+}
+a:hover {
+  color: #006AFF;
+}
+p {
+  line-height: 1.4;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+  text-align: left;
+}
+i {
+  font-size: 32px;
+  text-align: center;
+}
+.container {
+  width: 640px;
+  margin: 40px auto;
+}
+.card {
+  background-color: white;
+  padding: 32px 32px 40px;
+  margin: 0 24px 16px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+.first-card {
+  padding-bottom: 40px;
+}
+.first-card, .social-networks {
+  text-align: center;
+}
+.first-card p {
+  margin-bottom: 32px;
+}
+.social-networks {
+  padding-bottom: 32px;
+}
+.social-networks div {
+  width: 80px;
+  text-align: center;
+  margin: 0 20px;
+}
+.social a {
+  color: #ccc;
+}
+.fab {
+  color: #ddd;
+  margin-bottom: 12px;
+}
+.social:hover a {
+  color: #448ef6;
+  transition: color 0.5s ease;
+}
+
+.social:hover i {
+  color: #448ef6;
+  transition: color 0.5s ease;
+}
+/*.fab:hover {
+  color: #448ef6;
+  transition: color 0.5s ease;
+}*/
+.avatar {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+.btn {
+  color: white;
+  background-color: #448ef6;
+  padding: 12px 20px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.btn:hover {
+  color: white;
+  background-color: #006AFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+.tv-shows h2 {
+  margin-bottom: 16 px;
+}
+.cover {
+  margin-top: 32px;
+  width: 120px;
+  height: auto;
+  padding-right: 24px;
+}
+.tv-shows table {
+  text-align: left;
+  border-spacing: 0;
+}
+.tv-shows td {
+  vertical-align: top;
+  padding: 0;
+}
+
+.show-description {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 24px;
+}
+.about h2 {
+  margin-bottom: 24px;
+}
+.about p {
+  margin: 0;
+}
