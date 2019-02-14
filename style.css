@@ -3,9 +3,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Libre Franklin', sans-serif;
+  text-rendering: optimizeLegibility;
   font-size: 16px;
   color: #444;
-  background-color: #f2f2f2;
+  background-color: #eff2f5;
 }
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
@@ -49,8 +50,41 @@ i {
   font-size: 32px;
   text-align: center;
 }
+#sidebar {
+  position: fixed;
+  width: 120px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #3E5564;
+}
+#sidebar a {
+  color: white;
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+#sidebar a:hover {
+  opacity: 0.8;
+}
+#sidebar ul {
+  margin-top: 40px;
+}
+#sidebar ul li {
+  display: list-item;
+  text-align: center;
+  height: 24px;
+  margin: 48px auto;
+}
+#sidebar i {
+  font-size: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+#page-content {
+  margin-left: 120px;
+}
 .container {
-  width: 640px;
+  width: 800px;
   margin: 40px auto;
 }
 .card {
@@ -62,7 +96,7 @@ i {
   text-align: center;
 }
 .first-card {
-  padding-bottom: 40px;
+  padding-bottom: 48px;
 }
 .first-card, .social-networks {
   text-align: center;
@@ -79,6 +113,8 @@ i {
   margin: 0 20px;
 }
 .social a {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.035em;
   color: #ccc;
 }
 .fab {
@@ -105,17 +141,19 @@ i {
   margin-bottom: 8px;
 }
 .btn {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.035em;
   color: white;
   background-color: #448ef6;
   padding: 12px 20px;
   border-radius: 4px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  transition: background-color 0.5s ease;
+  border-bottom: 2px solid rgba(0,0,0,0.15);
 }
 .btn:hover {
   color: white;
   background-color: #006AFF;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-bottom: 2px solid rgba(0,0,0,0.15);
 }
 .tv-shows h2 {
   margin-bottom: 16 px;
@@ -134,7 +172,6 @@ i {
   vertical-align: top;
   padding: 0;
 }
-
 .show-description {
   border-bottom: 1px solid #eee;
   padding-bottom: 24px;
@@ -144,4 +181,43 @@ i {
 }
 .about p {
   margin: 0;
+}
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  #sidebar {
+  width: 120px;
+}
+#page-content {
+  margin-left: 120px;
+}
+  .container {
+    width: 600px;
+    margin: 40px auto;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  #sidebar {
+  width: 80px;
+}
+#page-content {
+  margin-left: 80px;
+}
+  .container {
+    width: 420px;
+    margin: 40px auto;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  #sidebar {
+  width: 60px;
+}
+#page-content {
+  margin-left: 60px;
+}
+  .container {
+    width: 400px;
+    margin: 40px auto;
+  }
 }

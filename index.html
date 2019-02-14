@@ -8,79 +8,142 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
   </head>
   <body>
-    <div class="container">
-      <div class="card first-card">
-        <img class="avatar" src="images/avatar-eduardoin.jpg" alt="Eduardo Insaurriaga">
-        <h1>Eduardo Insaurriaga</h1>
-        <h2>Designer</h2>
-        <p>I work with a <strong>holistic view</strong> and <strong>empathy for the user</strong>. I believe every detail is important, and teamwork is the best way to improve people's lives. Over 16 years of experience working in UX and digital products.</p>
-        <a class="btn" href="http://eduardoin.com/" target="_blank">Check out my Portfolio</a>
-      </div>
-      <div class="card social-networks">
-        <ul>
-          <li>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/eduardoin" target="_blank">
-                <i class="fab fa-linkedin"></i>
-                  LinkedIn
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="social">
-              <a href="https://github.com/eduardoin" target="_blank">
-                <i class="fab fa-github"></i>
-                  GitHub
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="social">
-              <a href="https://twitter.com/eduardoin" target="_blank">
-                <i class="fab fa-twitter"></i>
-                  Twitter
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="social">
-              <a href="https://www.instagram.com/eduardoin/" target="_blank">
-                <i class="fab fa-instagram"></i>
-                  Instagram
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="card tv-shows">
-        <h2>My favorite TV Shows</h2>
-        <table>
-          <tr>
-            <td><img class="cover" src="images/tv-breakingbad.jpg" alt="Breaking Bad"></td>
-            <td class="show-description">
-              <h3>Breaking Bad (2008)</h3>
-              <p>A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.</p>
-            </td>
-          </tr>
-          <tr>
-            <td><img class="cover" src="images/tv-blackmirror.jpg" alt="Black Mirror"></td>
-            <td class="show-description">
-              <h3>Black Mirror (2011)</h3>
-              <p>An anthology series exploring a twisted, high-tech world where humanity's greatest innovations and darkest instincts collide.</p>
-            </td>
-          </tr>
-          <tr>
-            <td><img class="cover" src="images/tv-mrrobot.jpg" alt="Mr. Robot"></td>
-            <td class="show-description">
-              <h3>Mr. Robot (2015)</h3>
-              <p>Elliot, a brilliant but highly unstable young cyber-security engineer and vigilante hacker, becomes a key figure in a complex game of global dominance when he and his shadowy allies try to take down the corrupt corporation he works for.</p>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="card about">
-        <h2>About this page</h2>
-        <p>This page has been coded during the <a href="https://lewagon.com/program" target="_blank">FullStack program @LeWagon</a>.<br>That was probably the best experience of my life (after becoming a father).</p>
+    <div id="sidebar">
+      <ul>
+        <li>
+          <div class="sidebar-anchor">
+            <a href="#summary">
+              <i class="fas fa-info-circle"></i>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-anchor">
+            <a href="#favorite-tv-shows">
+              <i class="fas fa-tv"></i>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-anchor">
+            <a href="#favorite-books">
+              <i class="fas fa-book"></i>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-anchor">
+            <a href="#about">
+              <i class="fas fa-bus"></i>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <!-- <a href="#favorite-tv-shows"><i class="far fa-tv-retro"></i></a>
+      <a href="#favorite-books"><i class="fas fa-book"></i></i></a>
+      <a href="#about"><i class="far fa-shuttle-van"></i></a> -->
+    </div>
+    <div id="page-content">
+      <div class="container">
+        <div id="summary" class="card first-card">
+          <img class="avatar" src="images/avatar-eduardoin.jpg" alt="Eduardo Insaurriaga">
+          <h1>Eduardo Insaurriaga</h1>
+          <h2>Designer</h2>
+          <p>I work with a <strong>holistic view</strong> and <strong>empathy for the user</strong>. I believe every detail is important, and teamwork is the best way to improve people's lives. Over 16 years of experience working in UX and digital products.</p>
+          <a class="btn" href="http://eduardoin.com/" target="_blank">Check out my Portfolio</a>
+        </div>
+        <div class="card social-networks">
+          <ul>
+            <li>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/eduardoin" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="social">
+                <a href="https://github.com/eduardoin" target="_blank">
+                  <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="social">
+                <a href="https://twitter.com/eduardoin" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                    Twitter
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="social">
+                <a href="https://www.instagram.com/eduardoin/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="favorite-tv-shows" class="card tv-shows">
+          <h2>My favorite TV Shows</h2>
+          <table>
+            <tr>
+              <td><img class="cover" src="images/tv-breakingbad.jpg" alt="Breaking Bad"></td>
+              <td class="show-description">
+                <h3>Breaking Bad (2008)</h3>
+                <p>A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="cover" src="images/tv-blackmirror.jpg" alt="Black Mirror"></td>
+              <td class="show-description">
+                <h3>Black Mirror (2011)</h3>
+                <p>An anthology series exploring a twisted, high-tech world where humanity's greatest innovations and darkest instincts collide.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="cover" src="images/tv-mrrobot.jpg" alt="Mr. Robot"></td>
+              <td class="show-description">
+                <h3>Mr. Robot (2015)</h3>
+                <p>Elliot, a brilliant but highly unstable young cyber-security engineer and vigilante hacker, becomes a key figure in a complex game of global dominance when he and his shadowy allies try to take down the corrupt corporation he works for.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="favorite-books" class="card tv-shows">
+          <h2>My favorite Books</h2>
+          <table>
+            <tr>
+              <td><img class="cover" src="images/book-1.jpg" alt="The Centaur in the Garden"></td>
+              <td class="show-description">
+                <h3>The Centaur in the Garden, by Moacyr Scliar</h3>
+                <p>Guedali Tartakovsky celebrates his 38th birthday. It is only now that Guedali is able to revel in memories of glorious times past. Born a centaur, Guedali describes his family's flight from Russia to Brazil at the turn of the century, the shock of his birth, the loving care of his parents and his sisters, the mounting resentment of his brother, and his extraordinary experiences being raised as a Jew. He meets his life companion--a centauress. Together they embark on a journey to create a place where the human and the wild can live in peaceful coexistence.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="cover" src="images/book-2.jpg" alt="Far from the Tree"></td>
+              <td class="show-description">
+                <h3>Far from the Tree, by Andrew Solomon</h3>
+                <p>Being exceptional is at the core of the human condition—that difference is what unites us. He writes about families coping with deafness, dwarfism, Down's syndrome, autism, schizophrenia, or multiple severe disabilities; with children who are prodigies, who are conceived in rape, who become criminals, who are transgender. While each of these characteristics is potentially isolating, the experience of difference within families is universal, with triumphs of love over prejudice in every chapter.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="cover" src="images/book-3.jpg" alt="Replay"></td>
+              <td class="show-description">
+                <h3>Replay, by Ken Grimwood</h3>
+                <p>Jeff Winston was 43 and trapped in a tepid marriage and a dead-end job, waiting for that time when he could be truly happy, when he died. And when he woke and he was 18 again, with all his memories of the next 25 years intact. He could live his life again, avoiding the mistakes, making money from his knowledge of the future, seeking happiness. Until he dies at 43 and wakes up back in college again...</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="about" class="card about">
+          <h2>About this page</h2>
+          <p>This page has been coded during the <a href="https://lewagon.com/program" target="_blank">FullStack program @LeWagon</a>.<br>That was probably the best experience of my life (after becoming a father).</p>
+        </div>
       </div>
     </div>
   </body>
